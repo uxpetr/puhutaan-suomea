@@ -95,18 +95,17 @@ header {
     fill: #1C45D6;
 }
 #topic {
-    margin: 40px;
+    margin: 40px 40px ;
     text-align: center;
     font-weight: 700;
     font-size: 6em;
 }
 footer {
-    height: 60px;
     background: #EFF1F7;
     display: flex;
     justify-content: space-between;
-    padding: 0 32px;
-    align-items: center;
+    padding: 22px 32px;
+    align-items: flex-start;
     box-shadow: inset 0px 10px 24px -24px rgba(0, 0, 0, 0.25);
 }
 .support a {
@@ -147,8 +146,7 @@ footer {
         font-size: 4em;
     }
     footer {
-        height: 48px;
-        padding: 0 20px;
+        padding: 14px 20px;
     }
 }
 
@@ -186,11 +184,9 @@ footer {
         text-align: left;
     }
     footer {
-        height: 48px;
-        padding: 0 16px;
+        padding: 16px;
     }
     .support a {
         font-size: 0.8em;
     }
-
 }
