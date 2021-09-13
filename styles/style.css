@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+
+body {
+    background: #FAFAFB;
+    color: #0F277E;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    box-sizing: border-box;
+    transition: all 1s ease;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 32px;
+    font-weight: 500;
+}
+.level {
+    display: flex;
+    font-size: 1.5em;
+    align-items: baseline;
+}
+.level p, .level ul {
+    margin: 0;
+}
+.level p {
+    margin-right: 20px;
+}
+.level-selector {
+    background: #EFF1F7;
+    border: 1px solid #E0E5F2;
+    padding: 2px;
+    border-radius: 4px;
+    margin-left: 20px;
+    display: flex;
+}
+.level-selector li {
+    list-style-type: none;
+    margin-right: 8px
+}
+.level-selector li:last-child {
+    margin-right: 0;
+}
+.level-selector:hover {
+    background: #ebeef7;
+    border: 1px solid transparent;
+}
+.level-selector li a {
+    line-height: 42px;
+    width: 48px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #0F277E;
+}
+.level-selector li a:hover {
+    color: #1C45D6;
+}
+.level-selector li.selected a {
+    color: #33353A;
+    background: #FAFAFB;
+    border-radius: 4px;
+    box-shadow: 0px 2px 2px rgba(10, 26, 82, 0.15);
+}
+.level-selector li.selected a:hover {
+    color: #33353A;
+    cursor: default;
+}
+.update-topic {
+    background: #EFF1F7;
+    border: 1px solid #E0E5F2;
+    border-radius: 4px;
+    line-height: 30px;
+    color: #0F277E;
+    font-size: 1.5em;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.update-topic:hover {
+    background: #ebeef7;
+    /*box-shadow: 0px 2px 2px rgba(10, 26, 82, 0.15);*/
+    border: 1px solid transparent;
+    color: #1C45D6;
+}
+.update-topic-icon {
+    margin-right: 12px;
+}
+.update-topic:hover .update-topic-icon path {
+    fill: #1C45D6;
+}
+#topic {
+    margin: 40px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 6em;
+}
+footer {
+    height: 60px;
+    background: #EFF1F7;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 32px;
+    align-items: center;
+    box-shadow: inset 0px 10px 24px -24px rgba(0, 0, 0, 0.25);
+}
+.support a {
+    text-decoration: none;
+    color: #1C45D6;
+}
+
+@media screen and (max-width: 1023px) {
+    header {
+        padding: 20px;
+    }
+    .level {
+        font-size: 1.2em;
+    }
+    .level p {
+        margin-right: 16px;
+    }
+    .level-selector li {
+        margin-right: 8px
+    }
+    .level-selector li a {
+        line-height: 36px;
+        width: 40px;
+    }
+    .update-topic {
+        background: #EFF1F7;
+        border: 1px solid #E0E5F2;
+        border-radius: 4px;
+        line-height: 28px;
+        font-size: 1.2em;
+        padding: 4px 8px;
+    }
+    .update-topic-icon {
+        margin-right: 8px;
+    }
+    #topic {
+        margin: 32px;
+        font-size: 4em;
+    }
+    footer {
+        height: 48px;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    header {
+        padding: 16px;
+    }
+    .level {
+        font-size: 1em;
+    }
+    .level p {
+        margin-right: 12px;
+    }
+    .level-selector li {
+        margin-right: 8px
+    }
+    .level-selector li a {
+        line-height: 32px;
+        width: 36px;
+    }
+    .update-topic {
+        background: #EFF1F7;
+        border: 1px solid #E0E5F2;
+        border-radius: 4px;
+        line-height: 24px;
+        font-size: 1em;
+        padding: 4px 8px;
+    }
+    .update-topic-icon {
+        margin-right: 4px;
+    }
+    #topic {
+        margin: 16px;
+        font-size: 3em;
+        text-align: left;
+    }
+    footer {
+        height: 48px;
+        padding: 0 16px;
+    }
+    .support a {
+        font-size: 0.8em;
+    }
+
+}
