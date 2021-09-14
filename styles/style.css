@@ -114,9 +114,6 @@ footer {
 }
 
 @media screen and (max-width: 1023px) {
-    body {
-        height: calc(100vh - 32px);
-    }
     header {
         padding: 20px;
     }
@@ -154,6 +151,9 @@ footer {
 }
 
 @media screen and (max-width: 620px) {
+    body {
+        height: calc(100vh - 32px);
+    }
     header {
         padding: 16px;
     }
@@ -182,7 +182,7 @@ footer {
         margin-right: 4px;
     }
     #topic {
-        margin: 16px;
+        margin: 0 16px;
         font-size: 3em;
         text-align: left;
     }
